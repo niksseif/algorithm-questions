@@ -22,7 +22,7 @@
         return -1;
     }
    
-    while (start < end ){
+    while (start+1 < end ){
         middle = start + parseInt((end-start)/2)
    
         if(nums[middle] > nums[middle-1] && nums[middle] > nums[middle+1]){
