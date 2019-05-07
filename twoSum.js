@@ -10,6 +10,7 @@ var twoSum = function (numbers, target) {
     let hash = {}
     for (let i = 0; i < numbers.length; i++) {
         let curNum = numbers[i];
+        //check if the remainder of target and current number is exist in the hash
         if (hash[target - curNum] !== undefined) {
             return [hash[target - curNum], i + 1];
         } else {
