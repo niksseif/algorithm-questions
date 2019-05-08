@@ -41,6 +41,6 @@
     return nums[start] > nums[end] ? start : end
  }
 let n = [1, 2, 3, 1]
- let res = peakFinder(n)
- console.log(res,"<>>>REs")
+let res = peakFinder(n)
+ 
  
