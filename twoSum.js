@@ -19,3 +19,28 @@ var twoSum = function (numbers, target) {
     }
     return [];
 };
+
+//this approach is giving the right answer 
+//time complexity is highier than the hash table approach!
+
+var twoSum = function (nums, target) {
+    let i = 0;
+    let j = 1
+    if (nums === undefined || nums.length === 0) {
+        return null;
+    }
+    while (i < j) {
+       
+        let curNum = target - nums[i]
+        if (nums[j] === curNum) {
+            return [i,j]
+        } else if(nums[j]!== curNum){
+            j++
+        } else{
+            i++
+        }
+    
+    }
+
+};
+console.log(twoSum([2, 15, 11, 14, 7],9))

@@ -11,6 +11,9 @@
  * @param {number} num
  * @return {number}
  */
+//o(1)  constatnt time complexity  
+// there are only 3 operations happening here 
+
 var addDigits = function (num) {
     return (num - 1) % 9 + 1 
 };

@@ -4,20 +4,16 @@ const maxSubArrSum = (arr, n) => {
     
     for (let i = 0; i < n; i++){
        tempSum += arr[i]
-        
     }
+    //getting the first sum from the first elements
     maxSum = tempSum;
-    console.log(maxSum,"<>>>>maxSum")
+    // remove first element add the third element ==>> moving window
     for (let i = n; i < arr.length;i++){
-        
-        temp = tempSum - arr[i-n] + arr[n]
-        console.log(temp,"<>>>>temp")
-        maxSum = Math.max(temp, maxSum);
+        tempSum = tempSum - arr[i-n] + arr[n]
+        //assign highiest number to maxSum
+        maxSum = Math.max(tempSum, maxSum);
+       
     }
     return maxSum
 }
 console.log(maxSubArrSum([1,2,5,2,8,1,5], 2))
-
-// for (let i =0; i < n ; i++){
-
-// }
