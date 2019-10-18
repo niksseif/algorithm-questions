@@ -18,9 +18,11 @@
 //   }
 // };
 //= ======== Soloution two
-const isPalindrome = (st) => {
-  const reversed = st.split('').reverse().join('');
-  return st === reversed;
-};
+// const isPalindrome = (st) => {
+//   const reversed = st.split('').reverse().join('');
+//   return st === reversed;
+// };
+// ------------Soloution three
+const isPalindrome = str => str.split('').every((char, i) => char === str[str.length - i - 1]);
 console.log(isPalindrome('abba'));
 
