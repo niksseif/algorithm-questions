@@ -26,3 +26,10 @@ function removeDuplication(arr) {
     }
     return res;
 }
+
+//------------------- OPTION 2
+function removeDuplication(a){
+    a.filter(v => a.indexOf(v) === a.lastIndexOf(v));
+}
+
+
