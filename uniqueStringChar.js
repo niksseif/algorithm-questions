@@ -24,16 +24,14 @@ function ll(str, stt) {
         let nn = stt.includes(char)
         if (!nn) {
             re += char
-        }
+        } 
     }
     return re
 }
 
 function solve(a, b) {
     let bb = ll(a, b)
-
     let aa = ll(b, a)
-
     return bb + aa
 };
 
