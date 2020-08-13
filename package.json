@@ -1,0 +1,22 @@
+{
+  "name": "algorithm-questions",
+  "version": "1.0.0",
+  "description": "My problem solving progress",
+  "main": "NA",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niksseif/algorithm-questions.git"
+  },
+  "author": "Nik ss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niksseif/algorithm-questions/issues"
+  },
+  "homepage": "https://github.com/niksseif/algorithm-questions#readme",
+  "devDependencies": {
+    "mocha": "^8.1.1"
+  }
+}
