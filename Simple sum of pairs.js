@@ -1,3 +1,8 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-return-assign */
+/* eslint-disable no-param-reassign */
+/* eslint-disable radix */
+/* eslint-disable max-len */
 // Given an integer n, find two integers a and b such that:
 
 // A) a >= 0 and b >= 0
@@ -13,22 +18,22 @@
 
 // Good luck!
 function solve(n) {
-    if (n.toString().length === 1) {
-        return n;
+  if (n.toString().length === 1) {
+    return n;
+  }
+  const num1 = Math.floor(n / 2).toString().split('').reduce((acc, el, i, arr) => {
+    if (i === 0 && arr.length === 1) {
+      return '9';
     }
-    let num1 = Math.floor(n / 2).toString().split('').reduce((acc, el, i, arr) => {
-        if (i === 0 && arr.length === 1) {
-            return '9'
-        }
 
-        if (i !== 0) {
-            return acc + '9'
-        }
+    if (i !== 0) {
+      return `${acc}9`;
+    }
 
-        return acc + (parseInt(el) - 1).toString()
-    }, '')
+    return acc + (parseInt(el) - 1).toString();
+  }, '');
 
-    let num2 = (n - parseInt(num1)).toString()
+  const num2 = (n - parseInt(num1)).toString();
 
-    return (num1 + num2).split('').reduce((acc, ch) => acc += parseInt(ch), 0)
+  return (num1 + num2).split('').reduce((acc, ch) => acc += parseInt(ch), 0);
 }

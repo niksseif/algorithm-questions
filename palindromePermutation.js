@@ -34,10 +34,9 @@ var canPermutePalindrome = function (s) {
             oddCount ++
         }
     }
-    console.log(hash,"<>>>hash")
     return oddCount< 2
 }
 //"code" -> False, "aab" -> True, "carerac" -> True.
-// console.log(canPermutePalindrome('code'))
-// console.log(canPermutePalindrome('aab'))
-// console.log(canPermutePalindrome('carerac'))
+console.log(canPermutePalindrome('code'))
+console.log(canPermutePalindrome('aabb'))
+console.log(canPermutePalindrome('carerac'))

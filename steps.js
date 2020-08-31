@@ -1,5 +1,4 @@
 function steps(n) {
-
     for (let row = 0; row < n; row++) {
         // console.log(row,"<>>>row")
         let stair = " "
@@ -11,5 +10,12 @@ function steps(n) {
         }
         console.log(stair)
     }
+}
+//<<<<<<<<<<<<<<<<<<<<<<<<    option 2      >>>>>>>>>>>
+function staircase(n) {
+    for (let i = 1; i <= n; i++) {
+        console.log("#".repeat(i).padStart(n))
+    }
+
 }
 console.log(steps(6))
