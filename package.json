@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/niksseif/algorithm-questions#readme",
   "devDependencies": {
-    "mocha": "^8.1.1"
+    "mocha": "^8.4.0"
   }
 }
